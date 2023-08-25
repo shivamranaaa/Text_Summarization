@@ -1,0 +1,131 @@
+[2023-08-25 09:51:19,854: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-08-25 09:51:19,856: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:51:19,857: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:51:19,857: INFO: common: created directory at: artifacts]
+[2023-08-25 09:51:19,857: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-08-25 09:51:23,391: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 9700:387705:47FB7:7047F:64E82C1A
+Accept-Ranges: bytes
+Date: Fri, 25 Aug 2023 04:20:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21749-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1692937245.734427,VS0,VE2411
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e3a132156e7c2946b09636115ea5a5ad5fbeb78b
+Expires: Fri, 25 Aug 2023 04:25:47 GMT
+Source-Age: 2
+
+]
+[2023-08-25 09:51:23,470: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-08-25 09:51:23,471: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-08-25 09:51:23,472: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:51:23,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:51:23,473: INFO: common: created directory at: artifacts]
+[2023-08-25 09:51:23,473: INFO: common: created directory at: artifacts/data_validation]
+[2023-08-25 09:51:23,474: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-08-25 09:51:23,474: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-08-25 09:51:23,476: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:51:23,477: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:51:23,477: INFO: common: created directory at: artifacts]
+[2023-08-25 09:51:23,477: INFO: common: created directory at: artifacts/data_transformation]
+[2023-08-25 09:51:29,937: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-08-25 09:51:29,937: INFO: main: *******************]
+[2023-08-25 09:51:29,937: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-08-25 09:51:29,939: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:51:29,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:51:29,940: INFO: common: created directory at: artifacts]
+[2023-08-25 09:51:29,940: INFO: common: created directory at: artifacts/model_trainer]
+[2023-08-25 09:54:48,591: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "c:\Users\shiva\OneDrive\Desktop\Text-Summarization-NLP-Project-main\main.py", line 51, in <module>
+    model_trainer.main()
+  File "c:\users\shiva\onedrive\desktop\text-summarization-nlp-project-main\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "c:\users\shiva\onedrive\desktop\text-summarization-nlp-project-main\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 113, in __init__
+  File "C:\Users\shiva\.conda\envs\venv\lib\site-packages\transformers\training_args.py", line 1400, in __post_init__
+    and (self.device.type != "cuda")
+  File "C:\Users\shiva\.conda\envs\venv\lib\site-packages\transformers\training_args.py", line 1857, in device
+    return self._setup_devices
+  File "C:\Users\shiva\.conda\envs\venv\lib\site-packages\transformers\utils\generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "C:\Users\shiva\.conda\envs\venv\lib\site-packages\transformers\training_args.py", line 1772, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2023-08-25 09:55:21,653: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-08-25 09:55:21,654: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:55:21,655: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:55:21,655: INFO: common: created directory at: artifacts]
+[2023-08-25 09:55:21,655: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-08-25 09:55:21,656: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-08-25 09:55:21,727: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-08-25 09:55:21,727: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-08-25 09:55:21,730: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:55:21,731: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:55:21,731: INFO: common: created directory at: artifacts]
+[2023-08-25 09:55:21,731: INFO: common: created directory at: artifacts/data_validation]
+[2023-08-25 09:55:21,732: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-08-25 09:55:21,732: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-08-25 09:55:21,734: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:55:21,735: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:55:21,735: INFO: common: created directory at: artifacts]
+[2023-08-25 09:55:21,735: INFO: common: created directory at: artifacts/data_transformation]
+[2023-08-25 09:55:22,797: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-08-25 09:55:22,797: INFO: main: *******************]
+[2023-08-25 09:55:22,798: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-08-25 09:55:22,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 09:55:22,800: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 09:55:22,800: INFO: common: created directory at: artifacts]
+[2023-08-25 09:55:22,801: INFO: common: created directory at: artifacts/model_trainer]
+[2023-08-25 14:41:56,563: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2023-08-25 14:41:56,563: INFO: main: *******************]
+[2023-08-25 14:41:56,564: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-08-25 14:41:56,570: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 14:41:56,576: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 14:41:56,576: INFO: common: created directory at: artifacts]
+[2023-08-25 14:41:56,576: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-08-25 14:42:49,227: INFO: rouge_scorer: Using default tokenizer.]
+[2023-08-25 14:42:49,306: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-08-25 14:43:04,947: INFO: server: Started server process [21124]]
+[2023-08-25 14:43:04,947: INFO: on: Waiting for application startup.]
+[2023-08-25 14:43:04,948: INFO: on: Application startup complete.]
+[2023-08-25 14:43:04,948: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-08-25 14:47:11,870: INFO: server: Started server process [15592]]
+[2023-08-25 14:47:11,870: INFO: on: Waiting for application startup.]
+[2023-08-25 14:47:11,870: INFO: on: Application startup complete.]
+[2023-08-25 14:47:11,871: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-08-25 14:49:27,340: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-25 14:49:27,343: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-25 14:49:27,344: INFO: common: created directory at: artifacts]
+[2023-08-25 14:49:27,345: INFO: common: created directory at: artifacts/model_evaluation]
