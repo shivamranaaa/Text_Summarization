@@ -44,7 +44,7 @@ python app.py
 
 Now,
 ```bash
-open up you local host and port
+localhost:8080
 ```
 
 
